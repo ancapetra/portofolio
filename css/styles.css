@@ -1,0 +1,339 @@
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+header, 
+footer, 
+div, 
+main {
+  box-sizing: border-box;
+}
+
+header {
+  position: relative;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 3px solid #a6ddee;
+}
+
+*, 
+::before, 
+::after {
+  box-sizing: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 25px;
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Main content */
+.main {
+  width: 100%;
+  grid-column: 2 / span 1;
+}
+
+/* Skills Vertical */
+.skills-v {
+  position: relative;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: left;
+}
+
+.language-v {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  margin-left: 5px;
+}
+
+.language-v img {
+  padding-bottom: 2em;
+  width: 9vw;
+  height: 9vw;
+}
+
+.language-v img:hover {
+  opacity: 0.6;
+}
+
+.language-v a {
+  display: block;
+  text-align: center;
+}
+
+/* Skills Horizontal */
+.skills-h {
+  position: relative;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  padding-top: 1.5em;
+}
+
+.language-h {
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  grid-gap: 25px;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  margin-left: 5px;
+}
+
+.language-h img {
+  padding-bottom: 2em;
+  width: 9vw;
+  height: 9vw;
+}
+
+.language-h img:hover {
+  opacity: 0.6;
+}
+
+.language-h a {
+  display: block;
+  text-align: center;
+}
+
+.language-h, 
+.a1 {
+  grid-area: 1 / 1 / span 1 / span 1;
+}
+
+.language-h, 
+.a2 {
+  grid-area: 1 / 2 / span 1 / span 1;
+}
+
+.language-h, 
+.a3 {
+  grid-area: 1 / 3 / span 1 / span 1;
+}
+
+/* Profile */
+.profile {
+  position: relative;
+  width: 100%;
+}
+
+/* Header */
+.header-inner {
+  display: block;
+  position: relative;
+  width: 100%;
+  border-bottom: 3px solid #a6ddee;
+  padding-bottom: 1em;
+}
+
+.header-logo {
+  position: relative;
+  width: 100px;
+  padding: 10px 0 0 0;
+}
+
+.header-logo img {
+  width: 100px;
+  padding: 10px 0 0 0;
+}
+
+.header-title {
+  position: relative;
+  margin-right: 0;
+  text-align: right;
+}
+
+/* Intro */
+.intro-image {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 1.5em;
+}
+
+.intro-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* Place text in the middle of the image */
+.intro-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 25px;
+  line-height: 1.5em;
+}
+
+.intro-text h1 {
+  line-height: 1em;
+}
+
+/* Featured Work */
+.work {
+  width: 100%;
+  padding-top: 1.5em;
+}
+
+.work-title {
+  width: 100%;
+  text-align: left;
+}
+
+/* Work Projects */
+.projects {
+  width: 100%;
+  padding-top: 1em;
+}
+
+.project1 {
+  grid-area: 1 / 1 / span 1 / span 1;
+}
+
+.project2 {
+  grid-area: 1 / 2 / span 1 / span 1;
+}
+
+.project3 {
+  grid-area: 1 / 3 / span 1 / span 1;
+}
+
+.projects img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 8px;
+  vertical-align: middle;
+  text-align: center;
+  z-index: -1;
+}
+
+.projects img:hover {
+  opacity: 0.5;
+}
+
+.project1 p:hover,
+.project2 p:hover,
+.project3 p:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.project1 p {
+  position: relative;
+  bottom: 65px;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  z-index: 1;
+}
+
+.project2 p {
+  position: relative;
+  bottom: 65px;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  z-index: 1;
+}
+
+.project3 p {
+  position: relative;
+  bottom: 65px;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  z-index: 1;
+}
+
+.projects a {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+/* Footer */
+.refference {
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-top: 0;
+  text-align: right;
+}
+
+.refference img {
+  width: 100%;
+  text-align: center;
+}
+
+.refference img:hover {
+  opacity: 0.6;
+}
+
+.refference p {
+  text-align: center;
+  font-size: 18px;
+}
